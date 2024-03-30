@@ -1,0 +1,61 @@
+* {
+	font-family: "Bitter", serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0eeedc8;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #609EA2;
+    cursor: pointer;
+}
+
+.back-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.post-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.post-date {
+	font-style: italic;
+	color: #913175;
+	margin-bottom: 10px;
+}
+.post-topic {
+	font-weight: bold;
+	color: #913175;
+	margin-bottom: 10px;
+}
+.post-content {
+	margin-bottom: 20px;
+    color: #332C39;
+}
+.post-image {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}

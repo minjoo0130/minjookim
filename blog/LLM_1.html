@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Blog Post</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <div class="container">
+        <a class="back-button" href="../index.html">
+            <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            Back to Home
+        </a>
+    <div class="container">
+        <h1 class="post-title">LLM and social/political biases</h1>
+        <p class="post-date">2024.03.25</p>
+        <p class="post-topic">LLM</p>
+        <div class="post-content">
+            <p>
+				This was a part of my assignment for LLM foundations and ethics class in Columbia University(Spring 2024). <br><br>
+	
+				We were assigned to read paper called <em>“From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP models”</em>. This paper is impactful in that it goes through the entire pipeline of pretraining data, LMs, and downstream tasks while previous papers focused on one part rather than the whole. Another notable point is that they measured the political bias using widely used standard test. 
+				This paper was cited 54 times since it got published (from litmap). <br><br>
+				Previous works branching out of this paper can be categorized into two. First category is paper like <em>On Second Thought, Let's Not Think Step by Step! Bias and Toxicity in Zero-Shot Reasoning (Shaikh, 2022)</em> and <em>Community LM: Probing Partisan Worldviews from Language Models (Jiang, 2022)</em>. These paper test and prove that LMs can have social/political biases. Second category is paper like <em>Upstream Mitigation Is Not All You Need: Testing the Bias Transfer Hypothesis in Pre-Trained Language Models (Steed, 2022)</em> where they stress the importance of pretrained data and that it must be modified and probed to minimize hate speech/ misinformation problem of LMs. 
+				<br><br>For subsequent paper, I looked into a paper titled <em>Don’t Hallucinate, Abstain: Identifying LLM Knowledge Gaps via Multi-LLM Collaboration (Feng, 2024)</em> which was written by the same author. I thought this paper was interesting in that they use the solution that was introduced at the end of the paper to mitigate the bias problem in LM. <br>
+				<br>At the end of this paper, it proposed two solutions to mitigate the problem which are <br>
+				<ol>
+					<li> Use a combination of pretrained LMs with different political leaning </li>
+					<li> Utilizing the fact that LMs are more sensitive to hate speech/ misinformation that differs their own, use a scenario specific LM </li>
+				</ol>
+				And in this later paper written by Feng in 2024 comes up with two specific methods to give LLMs an option to abstain to the downstream tasks and they are cooperated and compete method
+				<ol>
+					<li>Cooperate</li>
+					<ol>
+						<li> Uses two LLMs; one that outputs an answer and another that judges if the answer should be abstained or not. </li>
+						<li> Self mode (same LM), Others mode (different LM) </li>
+					</ol>
+					<li>Compete</li>
+					<ol>
+						<li> Uses multiple LLMs; one that outputs an answer and others to compare answers and see if it matches. </li>
+						<li> If majority of them don’t match, abstained.</li>
+					</ol>
+				</ol>
+				I thought this paper was interesting in that if there’s no way to make LMs free of bias, we at least need to have LMs an option to abstain on downstream tasks that can spread misinformation to the users. <br>
+			
+				So far, I think there’s no way of LLM to be better than human being. All human beings have biases and all LMs do too.
+			
+			</p>
+        </div>
+        <!-- <img class="post-image" src="image-placeholder.jpg" alt="Image Placeholder"> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+    <div class="main_container">
+        <h1>Kimhayeonn's Blog</h1>
+        <h7><a href="https://ordinary-tenor-7bd.notion.site/33cae6518741475fad34d686afff41e4?pvs=4" target="_blank" class="custom-link">About Me(kr)</a></h7>
+        <h7><a href="resume/spring_2024.pdf" target="_blank" class="custom-link">About Me(en)</a></h7>  
+        <h3>Blog</h3>
+        <ul class="menu">
+            <h5>LLM</h5>
+            <li><h6><a href="blog/LLM_1.html" target="_blank" class="custom-link">LLM and social/political biases</a></h6></li>
+            <!-- <li><a href="blog/LLM_1.html" target="_blank">LLM and social/political biases</a></li>
+            <li><a href="blog/LLM_1.html" target="_blank">LLM and social/political biases</a></li> -->
+        </ul>
+        <h3>Photo</h3>
+        <ul class="menu">
+            <li><h5><a href="photo/london.html" target="_blank" class="custom-link">London</a></h5></li>
+            <!-- <li><a href="blog/other_2.html" target="_blank">Other post 2</a></li>
+            <li><a href="blog/other_3.html" target="_blank">Other post 3</a></li> -->
+        </ul>
+        <h3>Video</h3>
+        <ul class="menu">
+            <li><h5><a href="https://www.youtube.com/@hayeonkim4999/videos" target="_blank" class="custom-link">Youtube</a></h5></li>
+        </ul>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var headings = document.querySelectorAll('.main_container h3');
+    
+            headings.forEach(function(heading) {
+                heading.addEventListener('click', function() {
+                    var list = this.nextElementSibling;
+                    list.classList.toggle('collapsed');
+                });
+            });
+        });
+    </script> 
+</body>
+</html>

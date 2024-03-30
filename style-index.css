@@ -1,0 +1,76 @@
+* {
+	font-family: "Bitter", serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+	background-color: #f0eeedc8;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling on body */
+}
+
+.container {
+    text-align: center; /* Center text content horizontally */
+    max-width: 800px; /* Adjust this value according to your design */
+}
+
+.menu {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main_container h1 {
+	color: #913175;
+	font-size: 40px;
+}
+
+.collapsed {
+    display: none;
+}
+
+.main_container h3 {
+    cursor: pointer;
+    color: #332C39;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+.main_container h5 {
+    cursor: pointer;
+    color: #332C39;
+	font-size: 15px;
+	margin-bottom: 5px;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.main_container h6 {
+    cursor: pointer;
+    color: #609EA2;
+	font-size: 15px;
+	margin-left: 30px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.main_container h7 {
+    cursor: pointer;
+    color: #609EA2;
+	font-size: 15px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.custom-link {
+    color: #609EA2; /* Change 'red' to the color you prefer */
+}
